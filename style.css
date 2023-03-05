@@ -137,7 +137,7 @@ header .header-hr {
 .grid-container {
   display: grid;
   margin: 0 auto;
-  width: 60rem;
+  max-width: 60rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .grid-container .grid-1 {
@@ -594,6 +594,7 @@ header .header-hr {
 }
 
 .slider {
+  max-width: 100%;
   margin-bottom: 2rem;
 }
 .slider .main {
@@ -663,6 +664,19 @@ header .header-hr {
 }
 
 footer {
+  align-items: center;
   background-color: #E2921E;
   height: 5rem;
+  display: flex;
+  gap: 10rem;
+  color: #FFFFFF;
+}
+footer .left {
+  margin-left: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+footer .left a {
+  color: #FFFFFF;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

@@ -132,7 +132,7 @@ header{
 .grid-container{
     display: grid;
     margin: 0 auto;
-    width: 60rem;
+    max-width: 60rem;
     grid-template-columns: repeat(3, 1fr);
     .grid-1{
         display: flex;
@@ -574,6 +574,7 @@ header{
 .block-nine{
     display: flex;
     width: 80%;
+    
     margin: 5rem auto;
     justify-content: space-between;
     text-align: center;
@@ -589,6 +590,7 @@ header{
     }
 }
 .slider{
+    max-width: 100%;
     margin-bottom: 2rem;
     .main{
         width: 50%;
@@ -665,8 +667,21 @@ header{
     }
 }
 footer{
+    align-items: center;
     background-color: #E2921E;
     height: 5rem;
+    display: flex;
+    gap: 10rem;
+    color: #FFFFFF;
+    .left{
+        margin-left: 4rem;
+        display: flex;
+        gap: 3rem;
+        a{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
 }
 
 
