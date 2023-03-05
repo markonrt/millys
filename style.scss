@@ -81,7 +81,7 @@ nav{
     }
 }
 header{
-    
+    height: 30rem;
     width: 100%;
     display: flex;
     position: relative;
@@ -98,7 +98,7 @@ header{
         img{
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit: fill;
         }
     }
     .header-text{
@@ -108,7 +108,7 @@ header{
         left: 10%;
     }
     .header-hr{
-        margin-top: 4rem;
+        margin-top: 3rem;
         width: 80%;
         height: 5px;
         background-color: #ffffff;
@@ -389,7 +389,7 @@ header{
     }
 }
 .block-four{
-    height: 27rem;
+    height: 30rem;
     display: flex;
     position: relative;
     .four-right-gray{
@@ -416,7 +416,8 @@ header{
         position: absolute;
         margin-top: 1.2rem;
         color: #FFFFFF;
-        margin: 140px 140px 280px 140px;
+        top: 25%;
+        right: 15%;
         h4{
             margin-top: 1.1rem;
         }
@@ -514,7 +515,8 @@ header{
         position: absolute;
         margin-top: 1.2rem;
         color: #FFFFFF;
-        margin: 140px 140px 280px 140px;
+        top: 25%;
+        left: 15%;
         h4{
             margin-top: 1.1rem;
         }
@@ -583,80 +585,69 @@ header{
     }
 }
 .slider{
-    max-width: 100%;
-    margin-bottom: 2rem;
-    .main{
-        width: 50%;
-        height: 20rem;
-        margin: 0 auto;
+    margin-bottom: 12.438rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .left-div{
+        position: relative;
+        width: 20%;
+        height: 13rem;
+        background-color: #525661;
+        #left-btn{
+            position: absolute;
+            cursor: pointer;
+            right: 2rem;
+            top: 40%;
+        }
+    }
+    #slider-div{
+        width: 60%;
+        height: 25rem;
         background-color: #08182F;
         position: relative;
-        
-        .left-square{
-            height: 10rem;
-            width: 20rem;
-            z-index: -1;
-            background-color: #525661;
-            position: absolute;
-            left: -20rem;
-            top: 6rem;
-        }
-        .right-square{
-            height: 10rem;
-            width: 20rem;
-            z-index: -1;
-            background-color: #525661;
-            position: absolute;
-            right: -20rem;
-            top: 6rem;
-        }
-        #left-btn{
-            cursor: pointer;
-            position: absolute;
-            left: -4rem;
-            top: 50%;
-        }
-        #right-btn{
-            position: absolute;
-            right: -4rem;
-            top: 50%;
-            cursor: pointer;
-        }
+        display: flex;
+        gap:1rem;
+        flex-direction: column;
         .big-quotes{
-            scale: 0.6;
-            left: 0.7rem;
-            position: absolute;
-            top: 0.2rem;
+            width: 12rem;
+            height: 6rem;
+            margin: 2rem 4rem;
         }
-        .small-quotes{
-            position: absolute;
-            right: 4rem;
-            bottom: 2rem;
-        }
-        #slider-div{
-            
-            position: relative;
-            width: 70%;
-            top: 40%;
-            margin: 0 auto;
-            
-            .slider{
-                
-                .text{
-                    font-size: 1.2rem;
-                    color: #FFFFFF;
-                }
-                .author{
-                    margin-top: 1rem;
-                    color: #E2921E;
-                    span{
-                        letter-spacing: -0.1rem;
-                    }
+        .slider{
+            width: 80%;
+            margin: 0 auto;    
+            .text{
+                font-size: 1.2rem;
+                color: #FFFFFF;
+            }
+            .author{
+                margin-top: 1rem;
+                color: #E2921E;
+                span{
+                    letter-spacing: -0.1rem;
                 }
             }
-            
         }
-
+        .small-quotes{
+            
+            margin-left: auto;
+            margin-right: 4rem;
+            width: 2.4rem;
+            height: 1.188rem;
+        }
+    }
+    .right-div{
+        position: relative;
+        width: 20%;
+        height: 13rem;
+        background-color: #525661;
+        #right-btn{
+            position: absolute;
+            cursor: pointer;
+            left: 2rem;
+            top: 40%;
+        }
     }
 }
 footer{

@@ -83,6 +83,7 @@ nav .lang span {
 }
 
 header {
+  height: 30rem;
   width: 100%;
   display: flex;
   position: relative;
@@ -101,8 +102,8 @@ header .header-right-img {
 header .header-right-img img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 header .header-text {
   position: absolute;
@@ -111,7 +112,7 @@ header .header-text {
   left: 10%;
 }
 header .header-hr {
-  margin-top: 4rem;
+  margin-top: 3rem;
   width: 80%;
   height: 5px;
   background-color: #ffffff;
@@ -391,7 +392,7 @@ header .header-hr {
 }
 
 .block-four {
-  height: 27rem;
+  height: 30rem;
   display: flex;
   position: relative;
 }
@@ -419,7 +420,8 @@ header .header-hr {
   position: absolute;
   margin-top: 1.2rem;
   color: #FFFFFF;
-  margin: 140px 140px 280px 140px;
+  top: 25%;
+  right: 15%;
 }
 .block-four .four-text h4 {
   margin-top: 1.1rem;
@@ -515,7 +517,8 @@ header .header-hr {
   position: absolute;
   margin-top: 1.2rem;
   color: #FFFFFF;
-  margin: 140px 140px 280px 140px;
+  top: 25%;
+  left: 15%;
 }
 .block-seven .seven-text h4 {
   margin-top: 1.1rem;
@@ -585,73 +588,69 @@ header .header-hr {
 }
 
 .slider {
-  max-width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 12.438rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-.slider .main {
-  width: 50%;
-  height: 20rem;
-  margin: 0 auto;
+.slider .left-div {
+  position: relative;
+  width: 20%;
+  height: 13rem;
+  background-color: #525661;
+}
+.slider .left-div #left-btn {
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+  top: 40%;
+}
+.slider #slider-div {
+  width: 60%;
+  height: 25rem;
   background-color: #08182F;
   position: relative;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
-.slider .main .left-square {
-  height: 10rem;
-  width: 20rem;
-  z-index: -1;
-  background-color: #525661;
-  position: absolute;
-  left: -20rem;
-  top: 6rem;
+.slider #slider-div .big-quotes {
+  width: 12rem;
+  height: 6rem;
+  margin: 2rem 4rem;
 }
-.slider .main .right-square {
-  height: 10rem;
-  width: 20rem;
-  z-index: -1;
-  background-color: #525661;
-  position: absolute;
-  right: -20rem;
-  top: 6rem;
-}
-.slider .main #left-btn {
-  cursor: pointer;
-  position: absolute;
-  left: -4rem;
-  top: 50%;
-}
-.slider .main #right-btn {
-  position: absolute;
-  right: -4rem;
-  top: 50%;
-  cursor: pointer;
-}
-.slider .main .big-quotes {
-  scale: 0.6;
-  left: 0.7rem;
-  position: absolute;
-  top: 0.2rem;
-}
-.slider .main .small-quotes {
-  position: absolute;
-  right: 4rem;
-  bottom: 2rem;
-}
-.slider .main #slider-div {
-  position: relative;
-  width: 70%;
-  top: 40%;
+.slider #slider-div .slider {
+  width: 80%;
   margin: 0 auto;
 }
-.slider .main #slider-div .slider .text {
+.slider #slider-div .slider .text {
   font-size: 1.2rem;
   color: #FFFFFF;
 }
-.slider .main #slider-div .slider .author {
+.slider #slider-div .slider .author {
   margin-top: 1rem;
   color: #E2921E;
 }
-.slider .main #slider-div .slider .author span {
+.slider #slider-div .slider .author span {
   letter-spacing: -0.1rem;
+}
+.slider #slider-div .small-quotes {
+  margin-left: auto;
+  margin-right: 4rem;
+  width: 2.4rem;
+  height: 1.188rem;
+}
+.slider .right-div {
+  position: relative;
+  width: 20%;
+  height: 13rem;
+  background-color: #525661;
+}
+.slider .right-div #right-btn {
+  position: absolute;
+  cursor: pointer;
+  left: 2rem;
+  top: 40%;
 }
 
 footer {
