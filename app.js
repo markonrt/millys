@@ -35,10 +35,6 @@ leftBtn.addEventListener("click", ()=>{
         slideNum = 2;
     }
     sliders[slideNum].style.display = "block";
-    /*
-    slideNum++;
-    
-    */
 })
 rightBtn.addEventListener("click", ()=>{
     sliders[slideNum].style.display = "none";
@@ -48,18 +44,4 @@ rightBtn.addEventListener("click", ()=>{
     }
     console.log(slideNum)
     sliders[slideNum].style.display = "block";
-    /*
-    slideNum++;
-    
-    */
 })
-
-
-
-
-
-/*forma*/
-
-/*document.querySelector('#form').addEventListener('submit', (e)=>{
-    e.preventDefault();
-})*/
