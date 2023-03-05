@@ -102,8 +102,8 @@ header .header-right-img {
 header .header-right-img img {
   height: 100%;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .header-text {
   position: absolute;
@@ -639,6 +639,24 @@ header .header-hr {
   margin-right: 4rem;
   width: 2.4rem;
   height: 1.188rem;
+}
+.slider #slider-div .slider-indicator {
+  display: flex;
+  gap: 3rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.slider #slider-div .slider-indicator .indicator-active {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #525661 !important;
+  border-radius: 50%;
+}
+.slider #slider-div .slider-indicator .indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #C4C4C4;
+  border-radius: 50%;
 }
 .slider .right-div {
   position: relative;

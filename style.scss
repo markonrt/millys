@@ -98,7 +98,7 @@ header{
         img{
             height: 100%;
             width: 100%;
-            object-fit: fill;
+            object-fit: cover;
         }
     }
     .header-text{
@@ -635,6 +635,24 @@ header{
             margin-right: 4rem;
             width: 2.4rem;
             height: 1.188rem;
+        }
+        .slider-indicator{
+            display: flex;
+            gap: 3rem;
+            margin: 0 auto;
+            cursor: pointer;
+            .indicator-active{
+                width: 0.75rem;
+                height: 0.75rem;
+                background-color: #525661!important;
+                border-radius: 50%;
+            }
+            .indicator{
+                width: 0.75rem;
+                height: 0.75rem;
+                background-color: #C4C4C4;
+                border-radius: 50%;
+            }
         }
     }
     .right-div{
