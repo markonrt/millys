@@ -6,6 +6,9 @@
     font-family: Cera Pro, sans-serif;
     src: url(./font/CeraProBold.otf);
 }
+:root{
+    font-size: 16px;
+}
 *{
     scroll-behavior: smooth;
     padding: 0;
@@ -37,7 +40,7 @@ nav{
     .nav-link{
         display: flex;
         justify-content: space-between;
-        width: 30%; 
+        width: 29.563rem; 
         a{
             color: #000000;
             text-decoration: none;
@@ -66,7 +69,7 @@ nav{
         }
     }
     .lang{
-        padding-right: 3rem;
+        padding-right: 1rem;
         #en{
             color: #E2921E;
         }
@@ -131,7 +134,7 @@ header{
 .grid-container{
     display: grid;
     margin: 0 auto;
-    width: 60rem;
+    max-width: 60rem;
     grid-template-columns: repeat(3, 1fr);
     .grid-1{
         display: flex;
@@ -331,6 +334,8 @@ header{
         }
     }
     .right{
+        width: 40%;
+
         text-align: right;
         h2{
         font-size: 2.8rem;
@@ -338,7 +343,7 @@ header{
     }
 }
 .block-three{
-    height: 20rem;
+    height: 32rem;
     background-color: #ECECEC;
     display: flex;
     padding: 0 4rem;
@@ -364,6 +369,7 @@ header{
     }
     .right{
         display: flex;
+        gap: 1rem;
         padding: 0 auto;
         align-items: center;
         justify-content: space-between;
@@ -603,7 +609,7 @@ header{
     }
     #slider-div{
         width: 60%;
-        height: 25rem;
+        height: 27rem;
         background-color: #08182F;
         position: relative;
         display: flex;
@@ -686,5 +692,106 @@ footer{
         }
     }
 }
-
+@media screen and (max-width:1024px) {
+    .slider{
+        #slider-div{
+            height: 28.75rem;
+        }
+    }
+    .block-two{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        .left{
+            width: 80%;
+            justify-content: space-between;
+        }
+        .right{
+            width: 26rem;
+            text-align: center;
+        }
+    }
+    .block-three{
+        flex-direction: column;
+        justify-content: center;
+        .three{
+            text-align: center;
+            width: 50%;
+            margin: 0rem auto;
+        }
+    }
+    .grid-container{
+        width: 50.188rem;
+        grid-template-columns: repeat(2,1fr);
+        .grid-3{
+            img{
+                transform: rotate(180deg);
+                left: 25rem;
+            }
+        }
+        .grid-5{
+            img{
+                z-index: 2;
+                transform: rotate(180deg);
+                left: 25rem;
+            }
+        }
+    }
+    .block-eight{
+        height: 123.75rem;
+        .container{
+            flex-direction: column;
+            .left{
+                text-align: center;
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                .row{
+                    width: 29rem;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 2.8rem;
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    .block-nine{
+        width: 15rem;
+        margin: 5rem auto;
+        flex-direction: column;
+        gap: 5.375rem;
+    }
+    
+}
+@media screen and (max-width:768px) {
+:root{
+    font-size: 12px;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size:  48px;
+}
+h3{
+    font-size:  40px;
+}
+h4{
+    font-size:  20px;
+}
+p{
+    font-size: 18px;
+}
+}
+@media screen and (max-width:640px) {
+    :root{
+        font-size: 10px;
+    }
+    }
 
