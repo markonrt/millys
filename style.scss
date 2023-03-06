@@ -748,7 +748,7 @@ footer{
         gap: 4rem;
         .three{
             text-align: center;
-            width: 31.25rem;
+            width: 28rem;
             margin: 0rem auto;
         }
     }
@@ -758,14 +758,14 @@ footer{
         .grid-3{
             img{
                 transform: rotate(180deg);
-                left: 25rem;
+                left: 24rem;
             }
         }
         .grid-5{
             img{
                 z-index: 2;
                 transform: rotate(180deg);
-                left: 25rem;
+                left: 24rem;
             }
         }
     }
@@ -919,15 +919,12 @@ nav{
         grid-template-columns: repeat(1,1fr);
         .grid-3{
             img{
-                transform: rotate(180deg);
-                left: 25rem;
+                display: none;
             }
         }
         .grid-5{
             img{
-                z-index: 2;
-                transform: rotate(180deg);
-                left: 25rem;
+                display: none;
             }
         }
     }

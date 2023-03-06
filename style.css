@@ -747,7 +747,7 @@ footer .left a {
   }
   .block-three .three {
     text-align: center;
-    width: 31.25rem;
+    width: 28rem;
     margin: 0rem auto;
   }
   .grid-container {
@@ -756,12 +756,12 @@ footer .left a {
   }
   .grid-container .grid-3 img {
     transform: rotate(180deg);
-    left: 25rem;
+    left: 24rem;
   }
   .grid-container .grid-5 img {
     z-index: 2;
     transform: rotate(180deg);
-    left: 25rem;
+    left: 24rem;
   }
   .block-eight {
     height: 123.75rem;
@@ -898,13 +898,10 @@ footer .left a {
     grid-template-columns: repeat(1, 1fr);
   }
   .grid-container .grid-3 img {
-    transform: rotate(180deg);
-    left: 25rem;
+    display: none;
   }
   .grid-container .grid-5 img {
-    z-index: 2;
-    transform: rotate(180deg);
-    left: 25rem;
+    display: none;
   }
 }
 @media screen and (max-width: 425px) {
