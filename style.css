@@ -143,7 +143,7 @@ header .header-hr {
 }
 
 .block-one {
-  width: 30%;
+  width: 26rem;
   display: flex;
   flex-direction: column;
   margin: 90px auto;
@@ -570,7 +570,6 @@ header .header-hr {
   display: flex;
   align-items: center;
   gap: 3rem;
-  margin-bottom: 1.5rem;
 }
 .block-eight .container .right .row p {
   color: #fff;
@@ -779,7 +778,7 @@ footer .left a {
     gap: 2.8rem;
   }
   .block-eight .container .right .row p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .block-nine {
     width: 15rem;
@@ -838,6 +837,27 @@ footer .left a {
 @media screen and (max-width: 640px) {
   :root {
     font-size: 10px;
+  }
+  footer {
+    height: 30rem;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  footer .left {
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+  }
+  footer .right {
+    text-align: center;
+  }
+  .block-two .left {
+    flex-direction: column;
+  }
+  .block-two .left .card p .bottom {
+    text-align: center;
   }
   .grid-container {
     width: 35rem;
