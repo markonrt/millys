@@ -970,4 +970,9 @@ nav{
         }
     }
 }
+@media screen and (max-width: 320px){
+    .grid-container{
+        max-width: 100%;
+    }
+}
 
