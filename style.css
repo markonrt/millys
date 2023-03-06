@@ -558,12 +558,15 @@ header .header-hr {
 .block-eight {
   height: 40rem;
   padding-top: 4rem;
+  display: flex;
   background-color: #525661;
 }
 .block-eight .container {
+  height: 100%;
   width: 90%;
   margin: 0 auto;
   display: flex;
+  align-content: center;
   flex-direction: row;
   justify-content: space-between;
   gap: 3rem;
@@ -574,11 +577,11 @@ header .header-hr {
 .block-eight .container .right .row {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
 }
 .block-eight .container .right .row p {
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0.8rem;
 }
 .block-eight .container .right .row .title {

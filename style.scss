@@ -560,11 +560,14 @@ header{
 .block-eight{
     height: 40rem;
     padding-top: 4rem;
+    display: flex;
     background-color: #525661;
     .container{
+        height: 100%;
         width: 90%;
         margin: 0 auto;
         display: flex;
+        align-content: center;
         flex-direction: row;
         justify-content: space-between;
         gap: 3rem;
@@ -573,10 +576,10 @@ header{
             .row{
                 display: flex;
                 align-items: center;
-                gap: 3rem;
+                gap: 4rem;
                 p{
                     color: #fff;
-                       font-size: 0.8rem;
+                       font-size: 1rem;
                     margin-bottom: 0.8rem;
                 }
                 .title{
