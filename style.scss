@@ -37,6 +37,23 @@ nav{
     padding: 1.5rem 2.5rem;
     justify-content: space-between;
     align-items: center;
+    .hamburger-button{
+        width: 3rem;
+        height: 1.8rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        .bar{
+            height: 0.25rem;
+            width: 100%;
+            border-radius: 0.5rem;
+            background-color: #000000;
+        }
+    }
+    img{
+        width: 8.75rem;
+        height: 3.866rem;
+    }
     .nav-link{
         display: flex;
         justify-content: space-between;
@@ -45,6 +62,10 @@ nav{
             color: #000000;
             text-decoration: none;
             font-size: 20px;
+            
+        }
+        a:hover{
+            color: #333538;
         }
         .hover-link{
             .dropdown{ 
@@ -693,6 +714,9 @@ footer{
     }
 }
 @media screen and (max-width:1024px) {
+    :root{
+        font-size: 14px;
+    }
     .slider{
         #slider-div{
             height: 28.75rem;
@@ -720,7 +744,7 @@ footer{
         }
     }
     .grid-container{
-        width: 50.188rem;
+        width: 50rem;
         grid-template-columns: repeat(2,1fr);
         .grid-3{
             img{
@@ -788,10 +812,56 @@ h4{
 p{
     font-size: 18px;
 }
+nav{
+    flex-direction: column;
+    gap: 3rem;
+    .logo{
+        margin: 0 auto;
+        width: 90%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        .hamburger-button{
+            display: flex!important;
+        }
+    }
+    .active{
+        display: flex!important;
+    }
+    .nav-link{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .lang{
+        display: none;
+    }
+}
+
+
 }
 @media screen and (max-width:640px) {
     :root{
         font-size: 10px;
+    }
+    .grid-container{
+        width: 35rem;
+        grid-template-columns: repeat(1,1fr);
+        .grid-3{
+            img{
+                transform: rotate(180deg);
+                left: 25rem;
+            }
+        }
+        .grid-5{
+            img{
+                z-index: 2;
+                transform: rotate(180deg);
+                left: 25rem;
+            }
+        }
     }
     }
 

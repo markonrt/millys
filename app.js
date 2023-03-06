@@ -92,4 +92,12 @@ rightBtn.addEventListener("click", ()=>{
             el.classList.add("indicator-active");
         };
     });
+});
+/*NAVBAR*/
+let hamb_btn = document.querySelector('nav .logo .hamburger-button');
+let navbar_links = document.querySelector('nav .nav-link');
+
+hamb_btn.addEventListener("click", () =>{
+    navbar_links.classList.toggle('active')
 })
+
