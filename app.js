@@ -19,7 +19,7 @@ function dropClicked(btn){
 /*Slider*/
 
 let sliders = document.querySelectorAll('#slider-div .slider');
-console.log(sliders)
+
 sliders.forEach(slide=>{
     slide.style.display = "none";
 });
@@ -59,14 +59,12 @@ dot3.addEventListener("click", ()=>{
     dot3.classList.add("indicator-active");
     slideNum=2;
     sliders[slideNum].style.display = "block";
-    console.log(slideNum)
 });
 
 
 leftBtn.addEventListener("click", ()=>{
     sliders[slideNum].style.display = "none";
     slideNum--;
-    console.log(slideNum);
     if(slideNum<=-1){
         slideNum = 2;
     }
